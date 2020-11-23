@@ -1,21 +1,23 @@
 \documentclass[letterpaper,10pt]{article}
 \pagenumbering{gobble}
 \usepackage[utf8]{inputenc}
-\usepackage{titlesec}
+\usepackage{titlesec, hyperref}
 
-\setlength{\parindent}{0pt}
-\usepackage{hyperref}
+% A test
 
+% Change behavior of and spacing around sections and paragraphs
 \usepackage{titlesec}
 \titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.4pt]\vspace{3pt}}]
 \titlespacing\section{0pt}{6pt}{0pt}
 \titlespacing\paragraph{0pt}{6pt}{0pt}
 
 \footskip=0pt
+\setlength{\parindent}{0pt}
 
 \usepackage[top=0.7in,left=1in,right=1in, bottom=1.5in,marginparwidth=1.1in]{geometry}
 
-\newcommand{\years}[1]{\ifhmode\hspace{6pt}\fi\textbf{#1:}}
+% A command with bold text and some additional space before
+\newcommand{\bold}[1]{\ifhmode\hspace{6pt}\fi\textbf{#1:}}
 
 \begin{document}
 \begin{center}
@@ -55,25 +57,25 @@ As an RA for Marieke Bos and Peter van Santen, I have participated in every part
 Selection of courses: \emph{Probability theory and statistics}; \emph{Mathematical and numerical analysis}. I graded students based on finals, reports, and oral presentations, and tutored them by feedback and answering questions during lab sessions.
 
 \section*{Language \& computer skills}
-\years{Native} Swedish \years{Fluent} English \\
-\years{Advanced} MATLAB, Stata, \LaTeX; \years{Intermediate} R; \years{Beginner} Python, Java, Julia, Github
+\bold{Native} Swedish \bold{Fluent} English \\
+\bold{Advanced} MATLAB, Stata, \LaTeX; \bold{Intermediate} R; \bold{Beginner} Python, Java, Julia, Github
 
 \section*{Awards \& fellowships}
-\years{2020} Ziman Center’s UCLA Rosalinde and Arthur Gilbert Program (UCLA), European Studies Fellowship (UCLA), Summer Graduate Fellowship (UCLA), Graduate Summer Research Mentorship program (UCLA) \years{2019} Frida och A O Ringqvists minnesfond (Karlstad) \years{2018} Ernst O Ek's stipendiefond (Sverige-Amerika Stiftelsen) \years{2015}
-The Fellows of KTH Scholarship Fund (Kamratstipendiefonden) \years{2012} Winner of EBEC Stockholm and representative of KTH at the Nordic finals (BEST) \years{2011} The Homeguard's bronze medal \emph{Awarded for my diligent work as member of the Skaraborg Homeguard Marching Band.}
+\bold{2020} Ziman Center’s UCLA Rosalinde and Arthur Gilbert Program (UCLA), European Studies Fellowship (UCLA), Summer Graduate Fellowship (UCLA), Graduate Summer Research Mentorship program (UCLA) \bold{2019} Frida och A O Ringqvists minnesfond (Karlstad) \bold{2018} Ernst O Ek's stipendiefond (Sverige-Amerika Stiftelsen) \bold{2015}
+The Fellows of KTH Scholarship Fund (Kamratstipendiefonden) \bold{2012} Winner of EBEC Stockholm and representative of KTH at the Nordic finals (BEST) \bold{2011} The Homeguard's bronze medal \emph{Awarded for my diligent work as member of the Skaraborg Homeguard Marching Band.}
 
 \section*{Extra-curricular activities} 
-\years{2015 and 2018} Volunteer at Mattecentrum as additional support in mathematics for high school students \years{2000--2018} Musician, playing the trombone in several orchestras. \href{https://www.youtube.com/watch?v=nn6dDYi3AFg}{\texttt{Link to recording!}}
+\bold{2015 and 2018} Volunteer at Mattecentrum as additional support in mathematics for high school students \bold{2000--2018} Musician, playing the trombone in several orchestras. \href{https://www.youtube.com/watch?v=nn6dDYi3AFg}{\texttt{Link to recording!}}
 \iffalse
 \iffalse
 \emph{Several elected positions} in my division of KTH Student association, including:
 \begin{lista2}
 \emph{Treasurer} for a committee, \\
-\emph{Producer} (head) for a play involving 100 people.  \years{2011--2015}
+\emph{Producer} (head) for a play involving 100 people.  \bold{2011--2015}
 \end{lista2}
 \fi
 \emph{Musician}, playing the trombone in several orchestras.% Lately mainly in symphonic orchestras.
-\years{2000--2018}
+\bold{2000--2018}
 
 %\section{REFERENCES}
 %\emph{Will be provided on request.}
