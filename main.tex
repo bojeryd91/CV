@@ -1,159 +1,79 @@
-\documentclass[a4paper,
-10pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \pagenumbering{gobble}
 \usepackage[utf8]{inputenc}
-\setlength{\textwidth}{6.1in}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{12pt}
-\usepackage{marginnote}
-\reversemarginpar
-\usepackage{bold-extra}
-\usepackage{helvet}
-\usepackage[strict]{changepage}
-\usepackage{fancyhdr}
+\usepackage{titlesec}
 
-\usepackage{url}
+\setlength{\parindent}{0pt}
+\usepackage{hyperref}
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.4pt]\vspace{3pt}}]
+\titlespacing\section{0pt}{6pt}{0pt}
+\titlespacing\paragraph{0pt}{6pt}{0pt}
 
 \footskip=0pt
 
-% Redefining section
-\renewcommand{\section}[1]{\vspace*{6pt}\marginnote{\raggedright\bfseries{\scshape{#1}}}[\parskip]}
+\usepackage[top=0.7in,left=1in,right=1in, bottom=1.5in,marginparwidth=1.1in]{geometry}
 
-% Defining year command
-\renewcommand{\year}[1]{\hfill#1\ignorespaces}
-
-% Define project
-\newcommand{\proj}[2]{\hspace*{-12pt}--\hspace{8pt}\emph{#1} #2}
-
-\newenvironment{lista}{\vspace*{-9pt}\begin{adjustwidth}{24pt}{0pt}}{\end{adjustwidth}\vspace*{-9pt}}
-\newenvironment{lista2}{\vspace*{-12pt}\begin{adjustwidth}{24pt}{0pt}}{\end{adjustwidth}\vspace*{-12pt}}
-
-\usepackage[top=0.7in,left=2in,bottom=1.5in,marginparwidth=1.1in]{geometry}
+\newcommand{\years}[1]{\ifhmode\hspace{6pt}\fi\textbf{#1:}}
 
 \begin{document}
-\begin{adjustwidth}{-1.2in}{0in} % Centers title on page
 \begin{center}
-{\Large \textbf{Resume -- Jesper Böjeryd}}
-\noindent\makebox[\linewidth]{\rule{\linewidth}{1pt}} % A line
+{\Large \textbf{Curriculum vitae -- Jesper Böjeryd}}\\[3pt]
 Born: 1991 \hspace{6pt} Nationality: Swedish \hspace{6pt} Email: bojeryd91@gmail.com \\
 Phone: +1 (310) 775-3781 \hspace{6pt} Address: 2014 S Bentley Avenue, Los Angeles, 90025, CA, USA \\
 \url{www.jesperbojeryd.se}
 \end{center}
-\end{adjustwidth}
 
-\section{EDUCATION}
+\section*{Education}
+\paragraph{2018--Exp. Jun 2024, Econ Ph.D. program}\hfill University of California, Los Angeles, USA\\
+C.Phil, M.A., fields: Macroeconomics, Asset pricing\\
+Committee: \href{https://www.leeohanian.com/}{Lee Ohanian (Main advisor)}, \href{https://sites.google.com/site/andyatkeson/}{Andy Atkeson}, \href{https://sites.google.com/site/kyleherkenhoff/}{Kyle Herkenhoff}, \href{https://sites.google.com/site/pierreolivierweill/}{Pierre-Olivier Weill}
 
-University of California, Los Angeles, USA: \year{September 2018--present}
-\begin{lista}
-\emph{Program:} Ph.D. program in Economics \\
-\emph{Fields:} Macroeconomics and Asset pricing\\
-\emph{Degrees:} C.Phil. and M.A.
-\end{lista}
+\paragraph{2010--2015, Engineering physics,}\hfill Royal Institute of Technology, Sweden\\
+M.Sc.Eng, M.Sc, and B.Sc, concentration: Applied and computational mathematics\\
+Master thesis: \href{https://www.diva-portal.org/smash/record.jsf?pid=diva2\%3A808180&dswid=-588}{\texttt{Long time integration of mole\-cular dynamics at constant  temperature with the symplectic Euler method}}, supervised by  Anders Szepessy
 
-Royal Institute of Technology (KTH), Stockholm, Sweden: \year{2010--2015}
-\begin{lista}
-\emph{Program:} Engineering physics (Teknisk fysik) \\
-\emph{Concentration:} Applied and computational mathematics \\
-\emph{Degrees:} M.Sc.Eng, M.Sc, and B.Sc \\
-Finished degrees earlier than academic plan (i.e., in less than five years). \\
-\emph{Master thesis} (supervisor Anders Szepessy): Long time integration of mole\-cular dynamics at constant  temperature with the symplectic Euler method.%
-\begin{lista}
-The thesis studies a numerical algorithm to solve a class of problems in statistical physics. I investigate how to efficiently integrate functions over the whole state space for indefinite time. I studied articles on the topic, set up experiments, implemented methods, and evaluated and presented the results. The algorithm is applied to three different experiments and evaluated against alternative methods found in the literature.\\
-\end{lista}
-\end{lista}
-Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of South Korea: \year{March--June 2013}
-\begin{lista}
-\emph{Exchange semester:} Studied individual courses and wrote my bachelor thesis.
-\end{lista}
-Karlstad University, Karlstad, Sweden: \year{Spring 2010}
-\begin{lista}
-\emph{Individual course:} Elementary Algebra. This was a unique one-year project to encourage talented students to study college-level mathematics during my senior year in high school.
-\end{lista}
+%The thesis studies a numerical algorithm to solve a class of problems in statistical physics. I investigate how to efficiently integrate functions over the whole state space for indefinite time. I studied articles on the topic, set up experiments, implemented methods, and evaluated and presented the results. The algorithm is applied to three different experiments and evaluated against alternative methods found in the literature.
 
-\section{WORK \\ EXPERIENCE}
-\emph{Teaching assistant}, UCLA: \year{2019--present}
-\begin{lista}
-I have taught the courses Statistics for economists, and Financial markets and financial institutions. Before every session I identify the concepts students are most unfamiliar with, and focus on those and connect them to their existing knowledge. I encourage a continuous dialogue by involving students in class and promoting the use of office hours.
-\end{lista}
+\paragraph{Mar--Jun 2013, Exchange semester}\hfill KAIST, Republic of South Korea\\
+Studied individual courses and wrote my bachelor thesis.
 
-\emph{Research assistant}, the Riksbank, Research division, to Mar\-ieke Bos and Peter van Santen; \year{2015--2017}\\
-and Swedish House of Finance at SSE, to Marieke Bos: \year{2017--2018}\\
-\phantom{hej}  \year{Summer 2019}
-\begin{lista}
-As an RA I have participated in every part of a research project. I have participated in out-of-house meetings to collect new data; planned, implemented, and presented data analysis using panel data econometrics; and discussed paper drafts and suggested improvements. I have also held a one-day course in basic MATLAB programming for the Riksbank's forecasting division and provided general help in econometrics and programming to colleagues.\\
-\end{lista}
+
+\paragraph{Spring 2010, Individual course}\hfill Karlstad University, Sweden\\
+Elementary Algebra. This was a unique one-year project to encourage talented students to study college-level mathematics during my senior year in high school
+
+\section*{Work experience}
+\paragraph{2019--present, Teaching assistant}\hfill UCLA\\
+I have taught the courses \emph{Statistics for economists}, and \emph{Financial markets and financial institutions}. Before every session I identify the concepts students are most unfamiliar with, and focus on those and connect them to their existing knowledge. I encourage a continuous dialogue by involving students in class and using OHs.
+
+\paragraph{2015--2017, summer 2019, Research assistant}\hfill The Riksbank and Swedish House of Finance\\
+As an RA for Marieke Bos and Peter van Santen, I have participated in every part of a research project. I sat in on out-of-house meetings to collect new data; planned, implemented, and presented data analysis using panel data econometrics; and discussed paper drafts and suggested improvements. I also held a one-day course in basic MATLAB programming for the Riksbank's forecasting division and provided general help in econometrics and programming to colleagues.
+
+\paragraph{Periodically 2014--2015, Teaching assistant}
+\hfill Royal Institute of Technology\\
+Selection of courses: \emph{Probability theory and statistics}; \emph{Mathematical and numerical analysis}. I graded students based on finals, reports, and oral presentations, and tutored them by feedback and answering questions during lab sessions.
+
+\section*{Language \& computer skills}
+\years{Native} Swedish \years{Fluent} English \\
+\years{Advanced} MATLAB, Stata, \LaTeX; \years{Intermediate} R; \years{Beginner} Python, Java, Julia, Github
+
+\section*{Awards \& fellowships}
+\years{2020} Ziman Center’s UCLA Rosalinde and Arthur Gilbert Program (UCLA), European Studies Fellowship (UCLA), Summer Graduate Fellowship (UCLA), Graduate Summer Research Mentorship program (UCLA) \years{2019} Frida och A O Ringqvists minnesfond (Karlstad) \years{2018} Ernst O Ek's stipendiefond (Sverige-Amerika Stiftelsen) \years{2015}
+The Fellows of KTH Scholarship Fund (Kamratstipendiefonden) \years{2012} Winner of EBEC Stockholm and representative of KTH at the Nordic finals (BEST) \years{2011} The Homeguard's bronze medal \emph{Awarded for my diligent work as member of the Skaraborg Homeguard Marching Band.}
+
+\section*{Extra-curricular activities} 
+\years{2015 and 2018} Volunteer at Mattecentrum as additional support in mathematics for high school students \years{2000--2018} Musician, playing the trombone in several orchestras. \href{https://www.youtube.com/watch?v=nn6dDYi3AFg}{\texttt{Link to recording!}}
 \iffalse
-\begin{lista}
-I have also worked with: Bo Becker, Itzhak Ben-David, Emily Breza, Chlo\'e Le Coq, Andres Liberman, Kurt Mitman, Leonard Nakamura, Stan Rabinovich, Kasper Roszbach, David Vestin.
-\end{lista}
-\fi
-%As research assistant I have: programmed scripts; helped out with details in articles; participated in the discussions on set-up of models and interpretation of results; and worked with preparing presentations. I participated in weekly research seminars at the Research division and research conferences. I shared my knowledge and interacted with other researchers at the division. For more detailed description of projects I have contributed to, see provided list on page 2.
-
-\emph{Teaching assistant}, KTH: \year{periodically 2014--2015}
-\begin{lista2}
-I have taught and corrected exams in several undergraduate courses: e.g. Probability theory and statistics, and Mathematical and numerical analysis. I passed or failed students based on written and oral presentations, and tutored them by feedback and answering questions during lab sessions. %I have also been a substitute teacher for a class in elementary analysis.
-\end{lista2}
-
-%\emph{Conductor assistant}: \year{January--February 2013}
-%\begin{lista2}
-%I administered purchased sheet music for the symphonic orchestra at KTH. Also, I digitalized original music, proof-read music and prepared logistics for rehearsals.
-%\end{lista2}
-
-\newpage
-
-\section{LANGUAGE \& COMPUTER SKILLS}
-\emph{Swedish:} Native, \emph{English:} Fluent \\
-Advanced: MATLAB, Stata, \LaTeX; Intermediate: R; Beginner: Python, Java, Julia, Github %\\
-%{\sl Operating Systems:} Windows, Unix. 
-
- 
-%-------------------------------------------------------------------------------
-%	COMMUNITY SERVICE SECTION
-%-------------------------------------------------------------------------------
-
-\section{AWARDS \& FELLOWSHIPS}
-\emph{European Studies Fellowship (UCLA)}\year{2020}\\
-\emph{Summer Graduate Fellowship (UCLA)}\year{2020}\\
-\emph{Graduate Summer Research Mentorship program (UCLA)}\year{2020}\\
-\emph{Frida och A O Ringqvists minnesfond} \year{2019}\\
-\emph{Ernst O Ek's stipendiefond} \year{2018}
-\begin{lista2}
-A fellowship of the Sweden-America Foundation, funded first year at UCLA.
-\end{lista2}
-\emph{The Fellows of KTH Scholarship Fund} (Kamratstipendiefonden)  \year{2015}%
-\begin{lista2}
-Each division of the KTH Student association elects yearly a member to ``the friend grant'', for being a good, supportive classmate.
-\end{lista2}
-\emph{Winner of EBEC Stockholm}, and represented KTH at the Nordic finals. \year{2012}%
-\begin{lista2}
-The contest was to, with provided materials, solve a given engineering problem.
-\end{lista2}
-\emph{The Homeguard's bronze medal}. \year{2011}%
-\begin{lista2}
-Awarded for my diligent work as member of the Skaraborg Homeguard Marching Band.
-\end{lista2}
-%\emph{Best senior-year project.} \year{2010}%
-%\begin{lista2}
-%My senior-year project in upper-secondary school -- about innovating and demonstrating methods in mathematics teaching for children -- won price being best project of my cohort.
-%\end{lista2}
-%-------------------------------------------------------------------------------
-%	EXTRA-CURRICULAR ACTIVITIES SECTION
-%-------------------------------------------------------------------------------
-
-\section{EXTRA-CURRICULAR ACTIVITIES} 
-\emph{Volunteer worker}, Mattecentrum. \year{2015 and 2018}
-\begin{lista2}
-Once a week I taught supplementary math to high school students.
-\end{lista2}
 \iffalse
 \emph{Several elected positions} in my division of KTH Student association, including:
 \begin{lista2}
 \emph{Treasurer} for a committee, \\
-\emph{Producer} (head) for a play involving 100 people.  \year{2011--2015}
+\emph{Producer} (head) for a play involving 100 people.  \years{2011--2015}
 \end{lista2}
 \fi
 \emph{Musician}, playing the trombone in several orchestras.% Lately mainly in symphonic orchestras.
-\year{2000--2018}
+\years{2000--2018}
 
 %\section{REFERENCES}
 %\emph{Will be provided on request.}
@@ -166,4 +86,5 @@ Once a week I taught supplementary math to high school students.
 %Marieke Bos, \>                  \> employer,          \> +46 73 573 74 61, \> Marieke.Bos@hhs.se
 %\endtabbing}
 %\fi
+\fi
 \end{document}
