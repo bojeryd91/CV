@@ -12,6 +12,7 @@
 \RequirePackage{xpatch}
 \RequirePackage{enumitem}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage{longtable}
 
 % Load fonts
 \usepackage[urw-garamond]{mathdesign}% To get bold and garamond
@@ -90,9 +91,9 @@
 \newcommand{\dateentry}[2]{{\leavevmode\color{datecolor}{#1}} & #2 \\ \noalign{\medskip}}
 %\dimexpr(\textwidth - #1)\relax
 \newenvironment{datetabular}[1]{%
-    \begin{tabular}{@{}>{\raggedleft\arraybackslash}p{#1}!{\daterule}p{\dimexpr(\linewidth - #1 - 2em)\relax}}%
+    \begin{longtable}{@{}>{\raggedleft\arraybackslash}p{#1}!{\daterule}p{\dimexpr(\linewidth - #1 - 2em)\relax}}%
 }{%
-    \end{tabular}%
+    \end{longtable}%
 }
 
 \newcommand{\faCenter}[1]{\raisebox{-2pt}{#1}}
