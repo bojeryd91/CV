@@ -99,7 +99,7 @@
 \newcommand{\faCenter}[1]{\raisebox{-2pt}{#1}}
 \newcommand{\faCenterStyle}[2]{\raisebox{-2pt}{\faIcon[#1]{#2}}}
 
-\titleformat{\section}[display]{\Needspace{1cm}\large\bfseries}{}{0pt}{}[\vspace{-10pt}\rule{\linewidth}{1pt}]
+\titleformat{\section}[display]{\Needspace{4cm}\large\bfseries}{}{0pt}{}[\vspace{-10pt}\rule{\linewidth}{1pt}]
 \titlespacing*{\section}{0pt}{0em}{0.4em}
 
 \setlength\parindent{0pt}
