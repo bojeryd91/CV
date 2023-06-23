@@ -121,4 +121,11 @@
 %\rule{\linewidth}{1pt}
 }
 
-\pagestyle{empty}
+\RequirePackage{lastpage}
+%\pagestyle{empty}
+\pagestyle{fancy} 
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\lfoot{\today}
+\cfoot{Jesper Böjeryd}
+\rfoot{\thepage\ of \pageref{LastPage}}
