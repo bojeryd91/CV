@@ -91,16 +91,18 @@
 \newcommand{\dateentry}[2]{{\leavevmode\color{datecolor}{#1}} & #2 \\ \noalign{\medskip}}
 %\dimexpr(\textwidth - #1)\relax
 \newenvironment{datetabular}[1]{%
+    \vspace{-12pt}%
     \begin{longtable}{@{}>{\raggedleft\arraybackslash}p{#1}!{\daterule}p{\dimexpr(\linewidth - #1 - 2em)\relax}}%
 }{%
     \end{longtable}%
+    \vspace{-24pt}%
 }
 
 \newcommand{\faCenter}[1]{\raisebox{-2pt}{#1}}
 \newcommand{\faCenterStyle}[2]{\raisebox{-2pt}{\faIcon[#1]{#2}}}
 
 \titleformat{\section}[display]{\Needspace{4cm}\large\bfseries}{}{0pt}{}[\vspace{-10pt}\rule{\linewidth}{1pt}]
-\titlespacing*{\section}{0pt}{0em}{0.4em}
+\titlespacing*{\section}{0pt}{-1em}{0.4em}
 
 \setlength\parindent{0pt}
 \setlength\parskip{0pt}

@@ -5,9 +5,12 @@
 \addbibresource{publications.bib}
 
 \usepackage{hyperref}
+\usepackage{multicol}
 
 \author{Jesper Böjeryd}
-\renewcommand{\today}{July 23 2023}
+\renewcommand{\today}{August 15, 2023}
+
+\newcommand{\datetabspace}{4.5em}
 
 \begin{document}
 
@@ -31,114 +34,124 @@
 \vspace{-1.5em}
 
 \section{Research interests}
-    Macroeconomics, monetary policy, house price dynamics, household finance, durable consumption
+    Macroeconomics, household finance, migration, housing, durable consumption, monetary policy
 \section{Education}
 
 % The datetabular environment takes one argument, which is the width of the left date column. As seen here:
 %   9em is a good choice for "dual-date" formats (e.g. Sep 2015 - Nov 2019).
 %   4em is a good choice for month/year dates (Sep 2014).
 %   2em is a good choice for year-only dates (as seen in the publications)
-\begin{datetabular}{6em}
+\begin{datetabular}{\datetabspace}
 % This is just a tabular environment, for the most part. The dateentry command has been defined for
 % convenience. It takes two arguments, the first is the date and the second is whatever you wish placed to the right.
-\dateentry{2018--present}{
+\dateentry{2018--Present}{
 \textbf{Ph.D. in Economics, University of California, Los Angeles, USA}
 
-Degrees: Candidate in Philosophy; Master of Arts
+%C.Phil., M.A.
 
 Committee:
+\vspace{-12pt}\begin{multicols}{2}
 \begin{itemize}
     \item \href{https://www.leeohanian.com/}{\texttt{Lee Ohanian (Main advisor)}}
     \item \href{https://sites.google.com/site/andyatkeson/}{\texttt{Andy Atkeson}}
     \item \href{https://sites.google.com/site/kyleherkenhoff/}{\texttt{Kyle Herkenhoff}}
-    \item \href{http://www.econ.ucla.edu/mazzocco/}{\texttt{Maurizio Mazzocco}}
+    %\item \href{http://www.econ.ucla.edu/mazzocco/}{\texttt{Maurizio Mazzocco}}
     \item \href{https://sites.google.com/site/pierreolivierweill/}{\texttt{Pierre-Olivier Weill}}
-\end{itemize}\eatvspace}
+\end{itemize}\end{multicols}\eatvspace}
 
-\dateentry{2010--2015}{\textbf{Engineering, Royal Institute of Technology (KTH), Stockholm, Sweden}
+\dateentry{2010--2015}{\textbf{Royal Institute of Technology (KTH), Sweden}
 
-Degrees: Master of Science in Engineering; Master of Science; Bachelor of Science
-
-Programs: Engineering Physics (Teknisk fysik); Applied and Computational Mathematics
+M.Eng., M.S., B.S. in Engineering Physics/Applied and Computational Mathematics
 }
 
-\dateentry{Mar--Jun 2013}{\textbf{Korean Advanced Institute of Science and Technology, Daejeon, Republic of South Korea}
 
-Exchange semester. Studied individual courses and wrote my bachelor thesis.}
+%\dateentry{Mar--Jun 2013}{\textbf{Korean Advanced Institute of Science and Technology, Republic of South Korea}
 
-\dateentry{Spring 2010}{\textbf{Karlstad University, Karlstad, Sweden}
+%Exchange semester. Studied individual courses and wrote my bachelor thesis.}
 
-Course: Elementary Algebra. This was a unique one-year project to encourage talented students to study college-level mathematics during my senior year in high school.
-}
+%\dateentry{Spring 2010}{\textbf{Karlstad University, Sweden}
+
+%Course: Elementary Algebra. This was a unique one-year project to encourage talented students to study college-level mathematics during my senior year in high school.}
 \end{datetabular}
 
 \section{Current positions}
 
-\begin{datetabular}{6em}
+\begin{datetabular}{\datetabspace}
 %\dateentry{2022}{Norges bank (the central bank of Norway), Oslo, Norway
 
-\dateentry{Since 2022}{Norges bank, research division \quad Guest researcher
+\dateentry{2022}{Guest Researcher, Norges Bank, Research Division
 
-Center of Monetary Policy and Financial Stability (at SU) \quad Guest Ph.D. student
+Guest Ph.D. student, Center of Monetary Policy and Financial Stability (at SU)
 }
-\dateentry{Since 2021}{Department of Economics, Stockholm University \quad Visiting graduate student}
-\dateentry{Since 2020}{UCLA Ziman Center for Real Estate\quad Research scholar}
+\dateentry{2021}{Visiting Graduate Student, Department of Economics, Stockholm University}
+\dateentry{2020}{Research Scholar, UCLA Ziman Center for Real Estate}
 \end{datetabular}
 
 \section{Past positions}
-\begin{datetabular}{6em}
-    \dateentry{2022}{Norges bank, research division \quad PhD intern}
-    \dateentry{2021}{Swedish House of Finance, Stockholm, Sweden \quad Visiting research fellow}
+\begin{datetabular}{\datetabspace}
+    \dateentry{2023}{Dissertation Fellow, Federal Reserve Bank of San Francisco, Thomas J. Sargent D.F.}
+    \dateentry{2022}{Ph.D. Intern, Norges Bank, Research Division}
+    \dateentry{2021}{Visiting Research Fellow, Swedish House of Finance}
 \end{datetabular}
 
+\section{Working papers}
 
-\section{Ongoing work}
+\href{https://roinevestman.com/wp-content/uploads/2023/03/DP18034-compressed.pdf}{\textbf{The Housing Wealth Effect: Quasi-Experimental Evidence}}, \emph{with Dany Kessel, Björn Tyrefors, and Roine Vestman (\href{https://roinevestman.com/wp-content/uploads/2023/03/DP18034-compressed.pdf}{Latest version can be found \underline{here}})}
 
-\textbf{Car purchases, indebtedness, and monetary policy}
-
-Through a full-population panel for Sweden 1995--2015, I study how monetary policy affects new and used car purchases.
-
-\medskip
-
-\href{https://roinevestman.com/wp-content/uploads/2023/03/DP18034-compressed.pdf}{\textbf{The Housing Wealth Effect: Quasi-Experimental Evidence}}, with Dany Kessel, Björn Tyrefors, and Roine Vestman (\href{https://roinevestman.com/wp-content/uploads/2023/03/DP18034-compressed.pdf}{Latest version can be found \underline{here}})
-
-Our paper estimates the house price effect on car consumption by using an unexpected announcement of the continuation of Bromma Airport outside Stockholm. Affected households lost 19\% house wealth relative to households outside the airport noise zone, and we find a reduction in the price of new cars affected households buy in the following years. The extensive margin is not affected. We disentangle the channels at work by empirically studying borrowing behavior and through the lens of a calibrated life-cycle model which replicates most of our findings.
+We estimate the housing wealth effect on car consumption by using an unexpected announcement of the continuation of Bromma Airport outside Stockholm. Affected households lost 19\% house wealth relative to households outside the airport noise zone, and we find a reduction in the price of new cars affected households buy in the following year and no change on the extensive margin. By studying credit use, we find that the reduction in equity-withdrawal capacity is the driving force rather than changes in lifetime wealth. Our findings are consistent with a calibrated life-cycle model.
 
 \medskip
 
-\textbf{What do 12 billion card transactions say about house prices and consumption}, with Knut Are Aastveit, Magnus Gulbrandsen, Ragnar Juelsrud, and Kasper Roszbach
+\href{http://www.adambaybutt.org/uploads/1/2/4/9/124972193/baybutt_bojeryd-2021-qe_and_firms.pdf}{\textbf{Heterogeneous Effects of QE on Corporate Bonds and Firm Outcomes}}, \emph{with Adam Baybutt}
 
-Using a large sample of card transactions, we study how public sector employees and retirees responded to falls in home prices in Stavanger, Norway, compared to similar households in other parts of Norway following the oil price plunge of 2014--2016. We find overall small effects on consumption, which are concentrated on durable expenditures on furniture and car purchases. The effects are also greater for more indebted households.
+Since the Financial Crisis, quantitative easing has become a standard monetary policy tool. We ask how the Federal Reserve's QE programs during the 2010--2020s heterogeneously affected public firms' borrowing costs in the corporate bond market and if it influenced real outcomes. Results are ambiguous and indicate very small effects where dividends stand out to be most positively affected.
+
+
+\section{Work in progress}
+
+
+\textbf{(JMP) Should I Stay or Should I Go? Migration in Response to Changing Economic Conditions}
+
+Moving costs are an important element of spatial decision models to explain the limited migration responses to regional economic shocks, but our understanding of the underlying factors is limited. I empirically document the heterogeneous frictions of migration using the 2014 plunge in global oil prices as a persistent, negative shock to the expected income of workers in the oil region of Stavanger, Norway. The leaving probabilities of renters and young people increase while the probability decreases for homeowners. The arrival probability falls for all groups with the exception of low-income people with immediate family in the region. The findings explain the long-term changes in population composition of locations in economic decline. I show that these findings are consistent with a life-cycle model with location, housing choices, and heterogeneous moving costs. Homeowners migrate out less due to the negative shock to their housing wealth while cheaper housing skews the inflow toward low-income people with family ties in the region.
 
 \medskip
 
-\textbf{Heterogeneous Effects of QE on Corporate Bonds and Firm Outcomes}, with Adam Baybutt
 
-Since the Financial Crisis, quantitative easing has become a standard monetary policy tool. We ask how the Federal Reserve's QE programs during the 2010--2020s heterogeneously affected public firms' borrowing costs in the corporate bond market and if it influenced real outcomes. Results are so far ambiguous and indicate very small effects where dividends stand out to be most positively affected. We are currently exploring Covid-19-related QE.
+\textbf{What Do 12 Billion Card Transactions Say About House Prices and Consumption?}, \emph{with Knut Are Aastveit, Magnus Gulbrandsen, Ragnar Juelsrud, and Kasper Roszbach}
 
+Using the near-universe of digital transactions, we study how public sector employees and retirees responded to falls in home prices in Stavanger, Norway, compared to similar households in other parts of Norway following the oil price plunge of 2014--2016. We find overall small effects on consumption, which are concentrated to durable expenditures such as furniture and car purchases. The effects are also greater for more indebted households.
 
+\medskip
+
+\textbf{Durable expenditures, Indebtedness, and Monetary Policy}
+
+Through a full-population panel for Sweden 1995--2015, I study how monetary policy affects new and used car purchases. To be extended with housing transactions.
+
+\iffalse
 \section{Research papers}
 \nocite{*}% Loads every entry from the attached .bib file
 % Highlight takes three entries, given name, given name initials, and family name.
 % If you have a middle initial, this call looks like:
 % \highlightauthorname{Bob H.}{B. H.}{Smith}
 \highlightauthorname{Jesper}{J}{Bojeryd} 
-\begin{datetabular}{6em}
+\begin{datetabular}{\datetabspace}
 %printbibyear has been defined to only print entries from a given citation year.
 \dateentry{2021}{\printbibyear{2021}}
 \dateentry{2015}{\printbibyear{2015}}
 \end{datetabular}
+\fi
 
 %\section{Presentations}
 
 \section{Teaching experience}
-\begin{datetabular}{6em}
-\dateentry{UCLA}{Teaching assistant
+\begin{datetabular}{\datetabspace}
+\dateentry{UCLA}{Teaching assistant \quad \href{https://www.jesperbojeryd.se/teaching}{Teaching evaluations can be found \underline{here}}
 \begin{itemize}
     \item Statistics for Economists (Econ 41), Fall 2019 and Winter 2022
     \item Financial Markets and Financial Institutions (Econ 106M), Winter--Fall 2020
     \item Macroeconomic Theory (intermediate macroeconomics, Econ 102), Winter--Spring 2021
     \item Macroeconomics: Dynamics and Growth Theory (Ph.D. macroeconomics, Econ 202A), Fall 2021
+    \item Corporate Finance (Econ 106F), Fall 2022
 \end{itemize}\eatvspace}
 \dateentry{KTH}{Teaching assistant
 \begin{itemize}
@@ -149,64 +162,54 @@ Since the Financial Crisis, quantitative easing has become a standard monetary p
 
 
 \section{Relevant work experience}
-\begin{datetabular}{6em}
+\begin{datetabular}{\datetabspace}
 \dateentry{2017--2018}{Research assistant, Swedish House of Finance for Marieke Bos}
 
-\dateentry{2015--2017}{Research assistant, the Riksbank (the Swedish Central bank) for Marieke Bos and Peter van Santen}
-
-\dateentry{}{%
-Selection of projects I assisted:
-\begin{itemize}
-    \item \href{https://academic.oup.com/rfs/article/31/6/2005/4822045}{The labor market effects of credit market information}, by Bos, Breza, and Liberman, RFS, 2018; 2019 winner, Michael J. Brennan Best Paper Award
-    \item \href{https://academic.oup.com/rfs/article-abstract/34/5/2608/5893490}{Impulsive consumption and financial wellbeing: Evidence from an increase in the availability of alcohol}, by Ben-David and Bos, RFS, 2020
-    \item \href{https://www.sciencedirect.com/science/article/pii/B9780128135242000056}{Rationality in the consumer credit market: choosing between alternative and mainstream credit}, by Agarwal and Bos, Handbook of US Consumer Economics, 2019
-    \item \href{https://onlinelibrary.wiley.com/doi/10.1111/jmcb.12736}{Bad times, good credit}, by Becker, Bos, Roszbach, JMBC, 2020
-    \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3954829}{Are We Overdiagnosing Mental Illness? Evidence from Randomly Assigned Doctors}, by Bos, Hertzberg, and Liberman, WP
-    \item \href{https://www.science.org/doi/10.1126/sciadv.aba1551}{ADHD, financial distress, and suicide in adulthood: A population study}, by Beauchaine, Ben-David and Bos, Science Advances, 2020
-    \item \href{https://link.springer.com/article/10.1007/s11238-021-09815-2}{Scarcity and consumers’ credit choices}, by Bos, Le Coq, van Santen, Theory and Decision, 2021
-\end{itemize}\eatvspace}
+\dateentry{2015--2017}{Research assistant, the Riksbank for Marieke Bos and Peter van Santen}
 \end{datetabular}
 
 
 
 \section{Grants, awards, and fellowships}
 
-\begin{datetabular}{6em}
+\begin{datetabular}{\datetabspace}
 \dateentry{2023}{Thomas J. Sargent Dissertation Fellowship at the Federal Reserve Bank of San Francisco}
 
-\dateentry{2022}{Handelsbankens forskningsstiftelser with Roine Vestman \quad \$190,000 % SEK 1,860,000 
-
-Vinnova, Forskning on finansmarknaden 2022--2024 with Vestman and co-authors\quad \$343,000 % SEK 3,366,000
-
+\dateentry{2022}{Handelsbankens forskningsstiftelser with Roine Vestman (\$190,000); % SEK 1,860,000 
+Vinnova, Forskning on finansmarknaden 2022--2024 with Vestman and co-authors (\$343,000); % SEK 3,366,000
 Pandemic-related additional support (UCLA)}
 
-\dateentry{2021}{Pandemic TA Award (UCLA)
+\dateentry{2021}{Pandemic TA Award (UCLA), UCLA’s Lewis L. Clarke Graduate Fellowship Fund, Paulson Scholarship (UCLA)}
 
-UCLA’s Lewis L. Clarke Graduate Fellowship Fund
+\dateentry{2020}{The Ziman Center’s UCLA Rosalinde and Arthur Gilbert Program in Real Estate, Finance and Urban Economics; UCLA’s European Studies Fellowship; UCLA’s Summer Graduate Fellowship; UCLA’s Graduate Summer Research Mentorship program}
 
-Paulson Scholarship (UCLA)}
-\dateentry{2020}{The Ziman Center’s UCLA Rosalinde and Arthur Gilbert Program in Real Estate, Finance and Urban Economics
-
-UCLA’s European Studies Fellowship
-
-UCLA’s Summer Graduate Fellowship
-
-UCLA’s Graduate Summer Research Mentorship program}
 \dateentry{2019}{Karlstad kommun: Frida och A O Ringqvists minnesfond}
+
 \dateentry{2018}{Sverige-Amerika Stiftelsen: Fellow of Ernst O Ek’s stipendiefond}
+
 \dateentry{2015}{The Fellows of KTH Scholarship Fund (Kamratstipendiefonden)}
+
 \dateentry{2012}{Winner of EBEC Stockholm, and represented KTH at the Nordic finals}
+
 \dateentry{2011}{Recipient of the Swedish Homeguard’s bronze medal}
 \end{datetabular}
 
-\section{Conferences}
-NASM 2023, SOCAE 2022
+\section{Conferences and presentations}
+
+\newcommand{\schmark}[0]{\textsuperscript{\dag}}
+\newcommand{\comark}[0]{\textsuperscript{*}}
+
+\textbf{2024} ASSA 2024\comark\schmark \quad \textbf{2023} North American Summer Meeting, the Riksbank\comark, Dolomiti Macro Meetings\comark, Swiss Winter Conference on Financial Intermediation (poster session)\comark, Arne Ryde Workshop\comark, Oslo Macro Conference\comark, CSULB\schmark \quad \textbf{2022} SOCAE, Norges Bank, Greater Stockholm Macro Group\comark
+
+\smallskip
+
+\schmark indicates scheduled presentations and \comark presentations by co-authors of joint papers
 
 \section{Service}
-Organizer of SOCAE 2022
+Organizer of SOCAE 2022, Ph.D. student mentoring
 
 \section{Other}
-\begin{datetabular}{6em}
+\begin{datetabular}{\datetabspace}
 \dateentry{Languages}{English (fluent), Swedish (native)}
 \dateentry{Computer skills}{Julia, Matlab, Stata, \LaTeX{} (advanced)\quad R, Github (intermediate)
 
@@ -216,9 +219,12 @@ See\quad\href{https://github.com/bojeryd91}{\faGithub\enspace\texttt{https://git
 \end{datetabular}
 
 \section{Personal information}
-Citizenship: Swedish
 
-Hobbies: Trekking, running, beach volleyball, playing the trombone and the guitar
+\begin{datetabular}{\datetabspace}
+\dateentry{Citizenship}{Swedish}
+\dateentry{Hobbies}{Trekking, running, beach volleyball, playing the trombone and the guitar}
+\end{datetabular}
+
 
 
 \end{document}
