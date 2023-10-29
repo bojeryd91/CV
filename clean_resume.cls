@@ -1,4 +1,5 @@
-\ProvidesClass{clean_cv}[2021/07/28 v1.0.0 'CleanCV' Class]
+
+\ProvidesClass{clean_resume}[2021/07/28 v1.0.0 'CleanCV' Class]
 
 \LoadClass[12pt,letterpaper]{article}
 
