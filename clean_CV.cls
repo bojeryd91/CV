@@ -3,7 +3,7 @@
 
 \LoadClass[12pt,letterpaper]{article}
 
-\RequirePackage[margin=0.75in]{geometry} % half-inch margins
+\RequirePackage[margin=0.75in, top=0.5in]{geometry} % half-inch margins
 \RequirePackage{microtype}
 \RequirePackage{needspace}
 \RequirePackage{fancyhdr}
@@ -102,7 +102,7 @@
 \newcommand{\faCenter}[1]{\raisebox{-2pt}{#1}}
 \newcommand{\faCenterStyle}[2]{\raisebox{-2pt}{\faIcon[#1]{#2}}}
 
-\titleformat{\section}[display]{\Needspace{4cm}\large\bfseries}{}{0pt}{}[\vspace{-10pt}\rule{\linewidth}{1pt}]
+\titleformat{\section}[display]{\Needspace{5\baselineskip}\large\bfseries}{}{0pt}{}[\vspace{-10pt}\rule{\linewidth}{1pt}]
 \titlespacing*{\section}{0pt}{-1em}{0.4em}
 
 \setlength\parindent{0pt}
@@ -123,6 +123,7 @@
 %\vspace{-17.2pt}
 %\rule{\linewidth}{1pt}
 }
+\newcommand{\position}[2]{\Needspace{3\baselineskip}\textbf{#1}\hfill#2}
 
 \RequirePackage{lastpage}
 %\pagestyle{empty}
