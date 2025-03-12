@@ -10,28 +10,48 @@
   linkcolor=black,
   urlcolor=black,
 }
-\usepackage{multicol}
-\usepackage{ulem}
+\usepackage{multicol, multirow, ulem, array}
+\raggedcolumns
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 
 \author{Jesper Böjeryd}
 %\renewcommand{\today}{November 20, 2023}
 
 \newcommand{\datetabspace}{5.5em}
 
+\geometry{includeheadfoot, margin=0.6in, bottom=0.3in, top=-0.1in}
+\fancyhfoffset[r]{0.0in} % I don't know why but this makes the footer align with the new margins
+
 \begin{document}
 
-\begin{center}
-    {\Huge Jesper Böjeryd}\\[6pt]
-    Los Angeles, CA, USA | bojeryd91@gmail.com |
-    \url{www.jesperbojeryd.se} | +1 (310) 775-3781
-\end{center}
+\begin{tabular}
+    {@{}p{0.34\textwidth}@{}R{0.30\textwidth}@{}R{0.36\textwidth}@{}}
+    \multirow{3}{*}[3.7pt]{\Huge Jesper Böjeryd}
+    & +1 (310) 775-3781
+    & \url{jesper.hw.bojeryd@gmail.com} \\
+    & \url{www.jesperbojeryd.se}
+    & \url{www.github.com/bojeryd91} \\
+    & \multicolumn{2}{r@{}}{\url{www.linkedin.com/in/jesperbojeryd}}
+\end{tabular}
+
+\section{Summary}
+\eatvspace
+\begin{multicols}{3}
+    \textbf{Versatile researcher:} 10 years of experience in data collection, analysis, and presentation using financial, health, credit, corporate, realtor, and admin data. Raised \$533,000 in research grants.
+
+    \columnbreak
+
+    \textbf{Technical skills:} I combine my engineering training and economic analysis to produce code tailor to solving complex problems.
+
+    \columnbreak
+    
+    \textbf{Collaborative:} I manage projects with collaborators in multiple countries and institutions, and train and mentor researcher assistants and PhD students.
+\end{multicols}
 
 
-\section{Highlights}
+%\textbf{Programming skills:} Stata, Julia (parallel computing), R, Matlab, Python, Java. \quad (\uline{\href{https://github.com/bojeryd91}{Link to \faGithub{}}})
 
-\textbf{Programming skills:} Stata, Julia (parallel computing), R, Matlab, Python, Java. \quad (\uline{\href{https://github.com/bojeryd91}{Link to \faGithub{}}})
-
-\textbf{Data experience:} 9 years experience in collecting, cleaning, and analyzing large, mixed panel datasets. Inter-research team collaboration regarding a data server and meeting with data providers to specify deliveries.
+%\textbf{Data experience:} 10 years experience in collecting, cleaning, and analyzing large, mixed panel datasets. Inter-research team collaboration regarding a data server and meeting with data providers to specify deliveries.
     
 %\textbf{Quantitative modeling:} Asset pricing, solving and simulating household finance/wealth models
 
@@ -43,40 +63,46 @@
 \section{Professional experience% {\normalsize (\texorpdfstring{\protect\uline{\href{https://www.jesperbojeryd.se/research}{link to complete list}}}{for a complete list, see link}})
 }
 
-\position{Ph.D. Candidate at UCLA}{2018--present}
+\position{Postdoctoral Researcher, Department of Economics, Stockholm University}{2024--present}
 
 \begin{itemize}
-    \item Conducted several empirical studies using large corporate and administrative household datasets. Solved complex life-cycle models using recent innovations in computational methods.
-    %
-    \begin{itemize}
-        \item \textit{Paper 1:} I estimate the impact of changing home prices on workers' propensity to relocate following economic shocks to their current labor market, using a continuous difference-in-difference model (\texttt{in Stata}). I further analyze the channels at work by solving a spatial life-cycle model with decisions of location, housing, and wealth accumulation (\texttt{in Julia}).
-        %
-        \item \textit{Paper 2:} I study the impact of U.S. QE on corporate bond prices and firm outcomes by using high-frequency corporate bond data (TRACE) and an event-study methodology (\texttt{in R}, Compustat).
-        %
-        \item \textit{Paper 3:} We analyze how auto purchases are affected when mortgage access declines following a fall in home prices, using a difference-in-difference setting. We estimate a two-sample IV regression model (\texttt{in Stata}) and solve a complex household model (\texttt{in Julia}).
-        %
-        \item \textit{For complete list of papers}, \uline{\href{https://www.jesperbojeryd.se/research}{see website}}.
-    \end{itemize}
-    %
-    \item Managed research assistants and projects with co-authors across several institutions and countries.
-    %
-    \item Collaborated with private firms to construct novel datasets combined with Swedish administrative data.
-    %
-    \item Taught extensively at the undergraduate and graduate levels. \quad (\uline{\href{https://www.jesperbojeryd.se/teaching}{Link to evals}})
-    %
-    \item Collaborated with Stata Corp debugging and resolving a bug. The fix was shipped in an official update of Stata 17. Similar collaboration for the user-written \texttt{boottest}.
+    \item Submitted \textit{The housing wealth effect: Quasi-experimental evidence} -- R\&R at JME.
+    \item Managed a new micro-data-intensive project combining data from both private and public providers.
+    \item Developed and taught with short notice a master-level course in solving quantitative macroeconomic models using \texttt{MATLAB}/Dynare.
 \end{itemize}
-
 
 \medskip
 
-\position{Ph.D. Intern and Guest Researcher, Norges Bank}{2022--present}
+\position{Guest Researcher and Ph.D. Intern, Norges Bank}{2022--present}
 \begin{itemize}
-    \item \textit{Paper 4:} Conducted a co-authored project with central-bank researchers studying household-level expenditures in response to shocks to home prices. We use the near-universe of digital payments in Norway combined with rich administrative data.
+    \item Conducted a co-authored project with central-bank researchers studying household-level expenditures in response to shocks to home prices. %We use the near-universe of digital payments in Norway combined with rich administrative data using an instrumental-variable approach.
     \item Presented work for the Norges Bank Research Department and policymakers.
+    \item Developed memory-effective routines and data-cleaning scripts for Norway's Central Bank. %\quad
+    %Researchers suffered from freezing servers due to limited memory access when many would clean data
+\end{itemize}
+
+\medskip
+
+\position{Ph.D., University of California, Los Angeles}{2018--2024}
+
+\begin{itemize}
+    \item Wrote my dissertation consisting of four empirical studies
+    %
+    \begin{itemize}
+        \item \textit{Empirical methods used:} Standard and continuous difference-in-differences, instrumental variable regressions (2SLS and two-sample 2SLS).
+        %
+        \item \textit{Structural methods used:} General equilibrium, life-cycle models.
+        %
+        \item \textit{Data:} TRACE (High-frequency, over-the-counter U.S. corporate bond data); Compustat (US financial data); Swedish and Norwegian realtor data; Swedish and Norwegian administrative data (individual-level tax and other data. Very comprehensive).
+    \end{itemize}
+    %
+    \item Taught extensively at the undergraduate and graduate levels (see below).
+    %
+    \item Collaborated with Stata Corp debugging and resolving a bug. Fix shipped in an official Stata 17 update. Likewise for the user-written \texttt{boottest}.
 \end{itemize}
 
 
+\iffalse
 \medskip
 
 \position{Thomas J. Sargent Dissertation Fellow at the Federal Reserve Bank of San Francisco}{2023}
@@ -86,24 +112,23 @@
     \item Received fellowship and access to the bank's researchers to continue research on my dissertation.
     \item Presented solo-authored work twice to the research department and discussed research with Fed and guest researchers.
 \end{itemize}
-
+\fi
 
 \medskip
 
 \position{Research Assistant at The Riksbank and the Swedish House of Finance}{2015--2018}
 
 \begin{itemize}
-    \item Collected and analyzed corporate and household credit data, health data (\texttt{in Stata}) and wrote code for data scraping (\texttt{in Python}).
-    \item Utilized various econometric methods, including difference-in-difference and instrumental variable regressions.
+    \item Collected and analyzed corporate and household credit data, health data and wrote data scraper (\texttt{Python}).
     \item Contributed to six published articles on credit use, health economics, and labor economics.
-    \begin{itemize}
-        \item \uline{\href{https://academic.oup.com/rfs/article/31/6/2005/4822045}{The Labor Market Effects of Credit Market Information}}
-        \item \uline{\href{https://academic.oup.com/rfs/article/34/5/2608/5893490}{Impulsive Consumption and Financial Wellbeing}}
-        \item \uline{\href{https://link.springer.com/article/10.1007/s11238-021-09815-2}{Scarcity and Consumers' Credit Choices}}
-        \item \uline{\href{https://onlinelibrary.wiley.com/doi/10.1111/jmcb.12736}{Bad Times, Good Credit}}
-        \item \uline{\href{https://www.science.org/doi/full/10.1126/sciadv.aba1551}{ADHD, Financial Distress, and Suicide in Adulthood: A Population Study}}
-        \item \uline{\href{https://www.sciencedirect.com/science/article/pii/B9780128135242000056}{Rationality in the Consumer Credit Market}}
-    \end{itemize}
+    %\begin{itemize}
+    %    \item \uline{\href{https://academic.oup.com/rfs/article/31/6/2005/4822045}{The Labor Market Effects of Credit Market Information}}
+    %    \item \uline{\href{https://academic.oup.com/rfs/article/34/5/2608/5893490}{Impulsive Consumption and Financial Wellbeing}}
+    %    \item \uline{\href{https://link.springer.com/article/10.1007/s11238-021-09815-2}{Scarcity and Consumers' Credit Choices}}
+    %    \item \uline{\href{https://onlinelibrary.wiley.com/doi/10.1111/jmcb.12736}{Bad Times, Good Credit}}
+    %    \item \uline{\href{https://www.science.org/doi/full/10.1126/sciadv.aba1551}{ADHD, Financial Distress, and Suicide in Adulthood: A Population Study}}
+    %    \item \uline{\href{https://www.sciencedirect.com/science/article/pii/B9780128135242000056}{Rationality in the Consumer Credit Market}}
+    %\end{itemize}
     \item Managed data server and junior research assistants. Collaborated across research teams.
 \end{itemize}
 
@@ -113,17 +138,42 @@
 \position{Master thesis at KTH Royal Institute of Technology}{2015}
 
 \begin{itemize}
-    \item Performed independent research of simulation methods in molecular dynamics/systems of SDEs \texttt{in Matlab}, applying skills from the financial mathematics track. \quad (\uline{\href{https://www.diva-portal.org/smash/get/diva2:808180/FULLTEXT01.pdf}{Link to thesis}})
-    \item Taught computational mathematics, probability theory, and statistics at the undergraduate level.
+    \item Performed independent research of simulation methods in molecular dynamics/systems of SDEs in \texttt{Matlab}, applying skills from the financial mathematics track. %\quad (\uline{\href{https://www.diva-portal.org/smash/get/diva2:808180/FULLTEXT01.pdf}{Link to thesis}})
+    \item Taught at the undergraduate level.
     \item Trained in \texttt{Python}, \texttt{Java}, and \texttt{COMSOL}.
 \end{itemize}
 
+\section{Teaching experience}
+\eatvspace
+\begin{multicols}{2}
+Stockholm University, lecturer
+\begin{itemize}
+    \item Quantitative Macroeconomics, EC7218
+\end{itemize}
 
+\medskip
 
+University of California, Los Angeles, TA
+\begin{itemize}
+    \item Statistics for Economists, Econ 41
+    \item Financial Markets and Financial Institutions, Econ 106M
+    \item Macroeconomic Theory, Econ 102
+    \item Year 1 PhD Macroeconomics, Econ 202A
+    \item Corporate Finance, Econ 106F
+\end{itemize}
+
+\medskip
+
+KTH Royal Institute of Technology, TA
+\begin{itemize}
+    \item Real and Numerical Analysis
+    \item Statistics and Probability Theory
+\end{itemize}
+\end{multicols}
 
 \section{Education}
 
-\position{Ph.D., Economics}{2018--present}
+\position{Ph.D., Economics}{2018--2024}
 
 University of California, Los Angeles, USA
 
@@ -138,13 +188,41 @@ KTH Royal Institute of Technology, Stockholm, Sweden
 Specialization: Financial Mathematics (\textit{Arbitrage theory, derivative pricing, time series analysis})
 
 
+\section{Research papers}
+WP: \textit{Should I Stay of Should I Go? The Role of Housing in Understanding Limited Inter-Regional Worker Mobility}
 
+\smallskip
 
+SSRN WP: \textit{The Housing Wealth Effect: Quasi-Experimental Evidence} -- submitted \\ {with Dany Kessel, Björn Tyrefors, and Roine Vestman
+
+\smallskip
+
+\textit{What Do 12 Billion Card Transactions Say About House Prices and Consumption?} \\
+with Knut Are Aastveit, Magnus Gulbrandsen, Ragnar Juelsrud, Kasper Roszbach
+
+\smallskip
+
+UCLA Ziman Center for Real Estate WP: \textit{Heterogeneous Effects of QE on Corporate Bonds and Firm Outcomes} \quad
+with Adam Baybutt
+
+\smallskip
+
+Thesis: \textit{Long Time Integration of Molecular Dynamics at Constant Temperature with the Symplectic Euler Method}
+
+\smallskip
+
+For drafts, see \url{www.jesperbojeryd.se/research}.
 
 \section{Additional information}
 
-\textbf{Languages:} English (full professional proficiency), Swedish (native)
+\textbf{Languages:} English (full professional proficiency), Swedish (native).
 
-\textbf{Awards:} Research grants (\$533,000), Best pro-seminar presentation 2023 (UCLA), Teaching award (UCLA), Swedish Homeguard's bronze medal
+\smallskip
+
+\textbf{Programming skills:} Stata, Julia (parallel computing), R, Matlab, Python, Java. %\quad (\uline{\href{https://github.com/bojeryd91}{Link to \faGithub{}}})
+
+\smallskip
+
+\textbf{Awards:} Thomas J. Sargent Dissertation Fellow at the FRB of San Francisco, Research grants (\$533,000), Best pro-seminar presentation 2023 (UCLA), Teaching award (UCLA), Swedish Homeguard's bronze medal.
 
 \end{document}

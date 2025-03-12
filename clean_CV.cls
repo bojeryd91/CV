@@ -4,16 +4,9 @@
 \LoadClass[12pt,letterpaper]{article}
 
 \RequirePackage[margin=0.75in, top=0.5in]{geometry} % half-inch margins
-\RequirePackage{microtype}
-\RequirePackage{needspace}
-\RequirePackage{fancyhdr}
-\RequirePackage{titlesec}
-\RequirePackage{array}
-\RequirePackage{xcolor}
-\RequirePackage{xpatch}
-\RequirePackage{enumitem}
+\RequirePackage{microtype, needspace, fancyhdr, titlesec, array}
+\RequirePackage{xcolor, xpatch, enumitem, longtable}
 \RequirePackage[utf8]{inputenc}
-\RequirePackage{longtable}
 
 % Load fonts
 \usepackage[urw-garamond]{mathdesign}% To get bold and garamond
